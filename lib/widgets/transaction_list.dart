@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/transaction.dart';
 import 'package:intl/intl.dart';
-import 'package:intl/intl.dart';
 
 class TransactionList extends StatelessWidget {
   final List<Transaction> transactions;
@@ -56,6 +55,11 @@ class TransactionList extends StatelessWidget {
                       style: const TextStyle(
                         color: Colors.grey,
                       ),
+                    ),
+                    trailing: IconButton(
+                      icon: Icon(Icons.delete),
+                      color: Theme.of(context).errorColor,
+                      onPressed: () {},
                     ),
                   ),
                 );
